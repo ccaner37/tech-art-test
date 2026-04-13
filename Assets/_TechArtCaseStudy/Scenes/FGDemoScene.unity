@@ -5303,7 +5303,6 @@ GameObject:
   - component: {fileID: 1340404533}
   - component: {fileID: 1340404535}
   - component: {fileID: 1340404534}
-  - component: {fileID: 1340404536}
   m_Layer: 0
   m_Name: Panel
   m_TagString: Untagged
@@ -5375,20 +5374,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340404532}
   m_CullTransparentMesh: 1
---- !u!114 &1340404536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1340404532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0af925693e3687343b794df36c2741f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _button: {fileID: 1620490366}
-  _progressBar: {fileID: 731085353}
 --- !u!1 &1389595901
 GameObject:
   m_ObjectHideFlags: 0
@@ -7113,6 +7098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2034496580}
+  - component: {fileID: 2034496581}
   m_Layer: 0
   m_Name: LevelStartPanel
   m_TagString: Untagged
@@ -7140,6 +7126,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -423}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2034496581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034496579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0af925693e3687343b794df36c2741f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 1620490366}
+  _progressBar: {fileID: 731085353}
+  _progressText: {fileID: 869313635}
 --- !u!1 &2042011290
 GameObject:
   m_ObjectHideFlags: 0
