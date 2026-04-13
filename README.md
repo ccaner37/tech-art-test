@@ -25,7 +25,7 @@ Imported provided files into "main" branch and created a new branch named "main-
 I want to talk within 2 topics:
 
 ### Optimization: 
-1. For the performance improvemnts, currently the panels such as reward or settings are staying in the scene. They should be a prefab and removed from the scene. Instiated when needed, with a class controlling window/popup system.
+1. For the performance improvements, currently the panels such as "rate us" or "settings" are staying in the scene. They should be a prefab and removed from the scene. Instiated when needed, with a class controlling window/popup system.
 2. If specific UI has so many animations I would add it's own "Canvas" component which makes it optimized. Because Canvas is reconstructing itself in every change.
 3. We can use "Sprite Atlas" to optimize sprites and reduce batch count.
 4. I believe we don't need both 256x256 and 128x128 versions of the same assets. I can make any size within RectTransform "Width" and "Height". So I'm not currently deleting to break the scene but normally I would have.
@@ -37,3 +37,11 @@ Current UI structure is very chaotic and not futureproof. Let me explain;
 1. "Pivot"s aren't correctly set. Currently all of the pivots left in "Middle" which will break the visuals in different devices. Pivots must be set for stretching or preserving it's position correctly.
 2. UI is not dynamic! All of the rewards placed manually. When I will spawn the rewards procedurally from a script it won't work out. So what we will do is; We need to rebuild rewards section with "Content Size Fitter" and "Grid Layout Group" components.
 3. Localization hell: I see some texts aren't in "Auto size" and strecthed for the area they are in. They all will be broken when localization feature comes in.
+
+## 6. Pipeline optimization
+1. Naming convention is very important. Adding asset type prefix for example "audio_" then where it's used for "audio_ui" then what it looks/sounds like "audio_ui_success"
+2. "AssetPostprocessor" API for import pipeline. For example set "texture type" to "sprite" based on asset path or asset name.
+3. Overriding import settings based on platform (Android, IOS) for best result possible.
+4. Creating plugins for DCC tools such as Blender or Photoshop.
+
+#### Thanks for your time.
