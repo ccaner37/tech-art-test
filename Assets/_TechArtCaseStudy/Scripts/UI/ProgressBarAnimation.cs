@@ -11,6 +11,7 @@ namespace AppoDeal.TehartCaseStudy.UI
         [SerializeField] private Button _button;
         [SerializeField] private Slider _progressBar;
         [SerializeField] private TextMeshProUGUI _progressText;
+        [SerializeField] private RectTransform _rewardTransform;
 
         private const float FillDuration = 0.6f;
         private const float StartValue = 650f;
@@ -51,7 +52,16 @@ namespace AppoDeal.TehartCaseStudy.UI
             sequence.OnComplete(() =>
             {
                 AudioService.Instance.PlaySound(GameAudioType.Success);
-                _button.interactable = true;
+                
+                if (_rewardTransform != null)
+                {
+                    _rewardTransform.DOPunchScale(new Vector3(0.25f, 0.25f, 0.25f), 0.4f, 6, 1f)
+                        .OnComplete(() => _button.interactable = true);
+                }
+                else
+                {
+                    _button.interactable = true;
+                }
             });
         }
 
@@ -71,6 +81,7 @@ namespace AppoDeal.TehartCaseStudy.UI
         {
             transform.DOKill();
             _progressBar.DOKill();
+            if (_rewardTransform != null) _rewardTransform.DOKill();
         }
     }
 }
