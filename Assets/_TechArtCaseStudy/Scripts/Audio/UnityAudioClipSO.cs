@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Appodeal.TechartCaseStudy.AudioEffect
+namespace Appodeal.TechArtCaseStudy.AudioEffect
 {
     [CreateAssetMenu(fileName = "New UnityAudioClip", menuName = "Audio/UnityAudioClip")]
     public class UnityAudioClipSO : ScriptableObject

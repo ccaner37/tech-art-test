@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Appodeal.TechartCaseStudy.AudioEffect
+namespace Appodeal.TechArtCaseStudy.AudioEffect
 {
     public class AudioService : MonoBehaviour
     {

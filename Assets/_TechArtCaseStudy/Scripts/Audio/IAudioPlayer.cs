@@ -1,4 +1,4 @@
-namespace Appodeal.TechartCaseStudy.AudioEffect
+namespace Appodeal.TechArtCaseStudy.AudioEffect
 {
 
     // Open closed principle, in case we will switch to another audio engine in future like fmod

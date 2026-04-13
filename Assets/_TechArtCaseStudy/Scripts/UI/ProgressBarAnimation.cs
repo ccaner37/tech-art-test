@@ -1,10 +1,10 @@
-using Appodeal.TechartCaseStudy.AudioEffect;
+using Appodeal.TechArtCaseStudy.AudioEffect;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-namespace AppoDeal.TehartCaseStudy.UI
+namespace AppoDeal.TechArtCaseStudy.UI
 {
     public class ProgressBarAnimation : MonoBehaviour
     {

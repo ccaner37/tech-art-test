@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Appodeal.TechartCaseStudy.AudioEffect
+namespace Appodeal.TechArtCaseStudy.AudioEffect
 {
     public class UnityAudioPlayer : IAudioPlayer
     {
