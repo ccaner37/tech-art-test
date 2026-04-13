@@ -5,7 +5,7 @@ namespace Appodeal.TechartCaseStudy.AudioEffect
     public class AudioService : MonoBehaviour
     {
         [SerializeField] private AudioSource _audioSource;
-        [SerializeField] private UnityAudioClipSO _audioDatabase; // Assign your SO here in the Inspector
+        [SerializeField] private UnityAudioClipSO _audioDatabase;
 
         public static AudioService Instance { get; private set; }
 
