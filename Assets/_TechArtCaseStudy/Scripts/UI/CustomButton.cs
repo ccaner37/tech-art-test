@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using TMPro;
 
-namespace FGUIStarter
+namespace Appodeal.TechArtCaseStudy.UI
 {
     public class CustomButton : Button, IPointerDownHandler, IPointerUpHandler
     {
