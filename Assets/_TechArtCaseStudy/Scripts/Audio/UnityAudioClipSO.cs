@@ -14,17 +14,17 @@ namespace Appodeal.TechartCaseStudy.AudioEffect
     [Serializable]
     public class UnityAudioClipData
     {
-        public AudioType Type;
+        public GameAudioType Type;
         public AudioClip Clip;
 
-        public UnityAudioClipData(AudioType type, AudioClip clip)
+        public UnityAudioClipData(GameAudioType type, AudioClip clip)
         {
             Type = type;
             Clip = clip;
         }
     }
 
-    public enum AudioType
+    public enum GameAudioType
     {
         ButtonClick,
         Progress,

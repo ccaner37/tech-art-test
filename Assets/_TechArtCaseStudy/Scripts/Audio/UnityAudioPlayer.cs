@@ -7,12 +7,12 @@ namespace Appodeal.TechartCaseStudy.AudioEffect
     public class UnityAudioPlayer : IAudioPlayer
     {
         private readonly AudioSource _audioSource;
-        private readonly Dictionary<AudioType, AudioClip> _clipDictionary;
+        private readonly Dictionary<GameAudioType, AudioClip> _clipDictionary;
 
         public UnityAudioPlayer(AudioSource audioSource, UnityAudioClipSO audioData)
         {
             _audioSource = audioSource;
-            _clipDictionary = new Dictionary<AudioType, AudioClip>();
+            _clipDictionary = new Dictionary<GameAudioType, AudioClip>();
 
             if (audioData != null && audioData.Clips != null)
             {
@@ -26,7 +26,7 @@ namespace Appodeal.TechartCaseStudy.AudioEffect
             }
         }
 
-        public void PlayOneShot(AudioType type, float volume = 1f)
+        public void PlayOneShot(GameAudioType type, float volume = 1f)
         {
             if (_clipDictionary.TryGetValue(type, out AudioClip clip))
             {

@@ -22,12 +22,10 @@ namespace Appodeal.TechartCaseStudy.AudioEffect
             Instance = this;
             DontDestroyOnLoad(gameObject);
 
-            // Inject both the AudioSource and the Data into the player
             _audioPlayer = new UnityAudioPlayer(_audioSource, _audioDatabase);
         }
 
-        // The public API now just requires the type of sound you want to play
-        public void PlaySound(AudioType type, float volume = 1f)
+        public void PlaySound(GameAudioType type, float volume = 1f)
         {
             _audioPlayer?.PlayOneShot(type, volume);
         }
