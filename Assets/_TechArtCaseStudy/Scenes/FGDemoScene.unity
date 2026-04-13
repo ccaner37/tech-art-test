@@ -7177,6 +7177,7 @@ MonoBehaviour:
   _button: {fileID: 1620490366}
   _progressBar: {fileID: 731085353}
   _progressText: {fileID: 869313635}
+  _rewardTransform: {fileID: 90115182}
 --- !u!1 &2042011290
 GameObject:
   m_ObjectHideFlags: 0
